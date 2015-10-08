@@ -7,6 +7,7 @@ Install the node modules, and run Gulp to build into the `dist` folder.
 
 ```
 npm install
+bower install
 gulp
 ```
 
