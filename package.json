@@ -1,0 +1,27 @@
+{
+  "name": "page-tree",
+  "description": "Vue.js Page Tree",
+  "author": "Statamic",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilderborn/page-tree.git"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ruby-sass": "^2.0.4",
+    "gulp-sass": "^2.0.4",
+    "stringify": "^3.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "jquery-sortable": "^0.9.13",
+    "underscore": "^1.8.3",
+    "vue": "^1.0.0-beta.3",
+    "vue-resource": "^0.1.16"
+  }
+}

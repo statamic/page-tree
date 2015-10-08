@@ -1,0 +1,17 @@
+$fa-font-path:      "/dist/fonts/";
+$color_border:      #EAEAEA;
+$color_gray_light:  #838D94;
+$color_green:       #479967;
+
+@import "bootstrap";
+@import "font-awesome";
+@import "page-tree";
+
+body {
+    padding: 50px;
+}
+
+.loading {
+    padding: 30px;
+    text-align: center
+}

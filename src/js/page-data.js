@@ -1,0 +1,93 @@
+module.exports = [
+  {
+    "uuid": "72c016c6-cc0a-4928-b53b-3275f3f6da0a",
+    "order": "1",
+    "title": "About Me",
+    "url": "/about",
+    "edit_url": "http://talons-beard.dev/cp/content/pages/edit/about",
+    "create_child_url": "http://talons-beard.dev/cp/content/pages/create/about",
+    "slug": "about",
+    "published": true,
+    "has_entries": false,
+    "create_entry_url": "http://talons-beard.dev/cp/content/entries//create",
+    "entries_url": "http://talons-beard.dev/cp/content/entries",
+    "collapsed": false,
+    "items": []
+  },
+  {
+    "uuid": "60962021-f154-4cd2-a1d7-035a12b6da9e",
+    "order": "2",
+    "title": "Blog",
+    "url": "/blog",
+    "edit_url": "http://talons-beard.dev/cp/content/pages/edit/blog",
+    "create_child_url": "http://talons-beard.dev/cp/content/pages/create/blog",
+    "slug": "blog",
+    "published": true,
+    "has_entries": true,
+    "create_entry_url": "http://talons-beard.dev/cp/content/entries/blog/create",
+    "entries_url": "http://talons-beard.dev/cp/content/entries/blog",
+    "collapsed": false,
+    "items": []
+  },
+  {
+    "uuid": "3cd2d431-699c-417c-8d57-9183cd17a6fc",
+    "order": "3",
+    "title": "Gallery",
+    "url": "/gallery",
+    "edit_url": "http://talons-beard.dev/cp/content/pages/edit/gallery",
+    "create_child_url": "http://talons-beard.dev/cp/content/pages/create/gallery",
+    "slug": "gallery",
+    "published": true,
+    "has_entries": false,
+    "create_entry_url": "http://talons-beard.dev/cp/content/entries//create",
+    "entries_url": "http://talons-beard.dev/cp/content/entries",
+    "collapsed": false,
+    "items": []
+  },
+  {
+    "uuid": "bb91470d-8bd5-4342-b32b-cadac7827e16",
+    "order": "4",
+    "title": "Nested",
+    "url": "/nested",
+    "edit_url": "http://talons-beard.dev/cp/content/pages/edit/nested",
+    "create_child_url": "http://talons-beard.dev/cp/content/pages/create/nested",
+    "slug": "nested",
+    "published": false,
+    "has_entries": false,
+    "create_entry_url": "http://talons-beard.dev/cp/content/entries//create",
+    "entries_url": "http://talons-beard.dev/cp/content/entries",
+    "collapsed": false,
+    "items": [
+      {
+        "uuid": "bb91470d-8bd5-4342-b32b-cadac7827e16",
+        "order": "1",
+        "title": "Nested",
+        "url": "/nested",
+        "edit_url": "http://talons-beard.dev/cp/content/pages/edit/nested",
+        "create_child_url": "http://talons-beard.dev/cp/content/pages/create/nested",
+        "slug": "nested",
+        "published": false,
+        "has_entries": false,
+        "create_entry_url": "http://talons-beard.dev/cp/content/entries//create",
+        "entries_url": "http://talons-beard.dev/cp/content/entries",
+        "collapsed": false,
+        "items": []
+      },
+      {
+        "uuid": "bb91470d-8bd5-4342-b32b-cadac7827e16",
+        "order": "2",
+        "title": "Nested 2",
+        "url": "/nested",
+        "edit_url": "http://talons-beard.dev/cp/content/pages/edit/nested",
+        "create_child_url": "http://talons-beard.dev/cp/content/pages/create/nested",
+        "slug": "nested",
+        "published": false,
+        "has_entries": false,
+        "create_entry_url": "http://talons-beard.dev/cp/content/entries//create",
+        "entries_url": "http://talons-beard.dev/cp/content/entries",
+        "collapsed": false,
+        "items": []
+      }
+    ]
+  }
+];

@@ -1,0 +1,51 @@
+<li class="branch">
+    <div class="branch-row">
+        <div class="page-indent">
+            <span :class="{'page-toggle': true, toggleable: hasChildren}" v-on:click="toggle">
+                <i v-if="hasChildren" class="fa fa-caret-down" :class="{ 'collapsed': collapsed }"></i>
+            </span>
+            <span class="page-move drag-handle" v-if="!home"></span>
+            <span class="page-unmovable" v-if="home"></span>
+            <span class="indent-arrow" v-if="!home"></span>
+        </div>
+
+        <div class="page-text">
+            <a :href="editUrl" class="page-title">{{ title }}</a>
+            <a :href="editUrl" class="page-url">{{ url }}</a>
+        </div>
+
+        <div class="page-extras">
+            <div class="page-status" v-if="!published" title="Unpublished">
+                <i class="icon-status icon-status-draft"></i>
+            </div>
+            <div class="page-entries" v-if="hasEntries">
+                <i class="flaticon stroke multiple-documents"></i>
+                <a :href="createEntryUrl">Add</a>
+                or
+                <a :href="entriesUrl">Edit</a>
+            </div>
+        </div>
+
+        <div class="branch-meta">
+            <div class="page-actions">
+                <a :href="url" :title="url" class="page-action" target="_blank">
+                    <i class="fa fa-link"></i>
+                </a>
+                <div class="btn-group page-action">
+                    <i class="fa fa-bars" data-toggle="dropdown"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" @click.prevent="createPage"><i class="icon flaticon solid add-document-1"></i> New page</a></li>
+                        <li><a href="#" @click.prevent="deletePage"><i class="icon bigger flaticon stroke x-1"></i> Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <branches :pages="childPages"
+              :depth="depth + 1"
+              :parent-url="url"
+              :collapsed.sync="collapsed"
+              v-if="!home">
+    </branches>
+</li>
